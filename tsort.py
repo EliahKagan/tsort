@@ -53,8 +53,9 @@ def run() -> None:
 
     try:
         ordering = list(tsorter.static_order())
-    except CycleError:  # FIXME: Report what cycle was found.
-        die('cyclic dependency, no topological ordering', Status.CYCLIC)
+    except CycleError as error:
+        _, cycle = error.args
+        die(f'dependency cycle: {" ".join(cycle)}', Status.CYCLIC)
 
     for vertex in ordering:
         print(vertex)
