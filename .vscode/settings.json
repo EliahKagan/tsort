@@ -1,0 +1,14 @@
+{
+    "cSpell.words": [
+        "conda",
+        "itertools",
+        "linearization",
+        "mypy",
+        "pylint",
+        "pyright",
+        "pytest",
+        "tsort",
+        "tsorter",
+        "typeguard"
+    ]
+}

@@ -1,0 +1,16 @@
+name: tsort
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - more-itertools
+  - pytest>=7
+  - typeguard
+
+  # static analysis
+  - flake8
+  - mypy
+  - pylint
+  - pyright
