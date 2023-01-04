@@ -6,7 +6,6 @@ channels:
 dependencies:
   - python=3.11
   - more-itertools
-  - pytest>=7
   - typeguard
 
   # static analysis

@@ -1,9 +1,30 @@
 #!/usr/bin/env python3
 
+# Copyright (c) 2022 Eliah Kagan
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+
 """
 Topological sort, like the *nix utility.
 
 https://pubs.opengroup.org/onlinepubs/9699919799/utilities/tsort.html
+
+This tool does that job and is used in a similar way, but it does not aim for
+POSIX-compliance and it is not suitable as a replacement for a system tsort
+command.
+
+The code in this file does not actually implement topological sort. Instead, it
+uses graphlib.TopologicalSorter from the Python standard library. Although this
+program can be useful to run, my main goal is to demonstrate graphlib usage.
 """
 
 import enum
@@ -54,7 +75,7 @@ def run() -> None:
     try:
         ordering = list(tsorter.static_order())
     except CycleError as error:
-        _, cycle = error.args
+        _, cycle = error.args  # pylint: disable=unbalanced-tuple-unpacking
         die(f'dependency cycle: {" ".join(cycle)}', Status.CYCLIC)
 
     for vertex in ordering:

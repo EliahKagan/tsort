@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+more-itertools = "*"
+typeguard = "*"
+
+[dev-packages]
+flake8 = "*"
+mypy = "*"
+pylint = "*"
+pyright = "*"
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.1"

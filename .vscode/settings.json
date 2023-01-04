@@ -1,14 +1,19 @@
 {
     "cSpell.words": [
         "conda",
+        "Eliah",
+        "graphlib",
         "itertools",
+        "Kagan",
         "linearization",
         "mypy",
+        "POSIX",
         "pylint",
         "pyright",
         "pytest",
         "tsort",
         "tsorter",
+        "typechecked",
         "typeguard"
     ]
 }
