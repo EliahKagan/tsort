@@ -40,7 +40,7 @@
                 "sha256:6891f444625b6edb2ac798829b689e95297e100ddf89dbed5a8c610e34901501",
                 "sha256:df164d5ac811b9f44105a72b8f9d5edfb7b5b2d7e979b04ea377a77b3229114a"
             ],
-            "index": "pypi",
+            "markers": "python_full_version >= '3.7.2'",
             "version": "==2.13.5"
         },
         "dill": {
@@ -202,11 +202,11 @@
         },
         "pyright": {
             "hashes": [
-                "sha256:33426683d1e59a0a29247bec629deac07fb6302f916905f25e0487f964767d94",
-                "sha256:e3d7767b472ea42f99f338936d95964b97327e8d26fe04c45a377d65e83c9412"
+                "sha256:035ea1af6fabfdcc80c0afb545f677bd377114157d69779cce2a642ff894e51c",
+                "sha256:23d1f14b15afe38bb7a7117b9861ad0546aff078da312d294e60a727445c23ff"
             ],
             "index": "pypi",
-            "version": "==1.1.289"
+            "version": "==1.1.292"
         },
         "setuptools": {
             "hashes": [
