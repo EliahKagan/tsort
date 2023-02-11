@@ -203,18 +203,18 @@
         },
         "pyright": {
             "hashes": [
-                "sha256:035ea1af6fabfdcc80c0afb545f677bd377114157d69779cce2a642ff894e51c",
-                "sha256:23d1f14b15afe38bb7a7117b9861ad0546aff078da312d294e60a727445c23ff"
+                "sha256:9397fdfcbc684fe5b87abbf9c27f540fe3b8d75999a5f187519cae1d065be38c",
+                "sha256:afc05309e775a9869c864da4e8c0c7a3e3be9d8fe202e780c3bae981bbb13936"
             ],
             "index": "pypi",
-            "version": "==1.1.292"
+            "version": "==1.1.293"
         },
         "setuptools": {
             "hashes": [
                 "sha256:16ccf598aab3b506593c17378473978908a2734d7336755a8769b480906bec1c",
                 "sha256:b440ee5f7e607bb8c9de15259dba2583dd41a38879a7abc1d43a71c59524da48"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==67.2.0"
         },
         "tomlkit": {
