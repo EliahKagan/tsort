@@ -6,3 +6,8 @@ updates:
       interval: "monthly"
     allow:
       - dependency-type: "all"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
